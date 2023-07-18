@@ -1,0 +1,198 @@
+.size_buttons {
+  width: 200px;
+  padding: 20px;
+}
+.size_buttons button {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 11px;
+}
+.product {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.price_p {
+  display: flex;
+  align-items: baseline;
+  margin-top: -30px;
+}
+.price_p h4 {
+  font-size: 24px;
+}
+.gray_price_p {
+  display: flex;
+  align-items: baseline;
+  color: gray;
+  margin-top: -60px;
+}
+.gray_price_p h5 {
+  font-size: 18px;
+}
+.addToCart_button {
+  background-color: rgb(27, 26, 32);
+  color: rgb(255, 255, 255);
+  padding: 15px 100px;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+}
+.addToCart_button:hover{
+  background-color: rgb(234, 191, 0);
+}
+.product_name {
+  position: relative;
+  padding: 0px 20px;
+  height: 45px;
+  font-size: 20px;
+}
+.product_name::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgb(234, 191, 0);
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -10px;
+}
+.addToCart_button :hover {
+  background-color: rgb(234, 191, 0);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.shoppingbag {
+  width: 30px;
+  height: 30px;
+}
+.cartButton {
+  width: 50px;
+  height: 50px;
+  color: rgb(236, 236, 236);
+  background-color: rgb(27, 26, 32);
+  text-align: center;
+  position: fixed;
+  right: 0px;
+  cursor: pointer;
+  z-index: 2;
+}
+.Productsquantity {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: rgb(12, 11, 16);
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  background-color: rgb(234, 191, 0);
+  position: absolute;
+  margin-top: 19px;
+  margin-left: -9px;
+}
+.closingbutton {
+  width: 50px;
+  height: 50px;
+  color: rgb(236, 236, 236);
+  background-color: rgb(27, 26, 32);
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 2;
+  left: -50px;
+  border: none;
+}
+.checkout {
+  height: 100%;
+  width: 450px;
+  background-color: rgb(27, 26, 32);
+  position: fixed;
+  right: 0px;
+}
+.cartheader {
+  color: rgb(236, 236, 236);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 45px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.cart {
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+.checkfooter {
+  box-sizing: border-box;
+  padding: 5%;
+  padding-top: 0%;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  z-index: 2;
+  background-color: rgb(27, 26, 32);
+}
+.checkfooter ::before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+}
+.subtotal {
+  width: 20%;
+  color: rgb(91, 90, 94);
+  vertical-align: middle;
+  display: inline-block;
+}
+.pricebox {
+  width: 80%;
+  text-align: right;
+  color: rgb(91, 90, 94);
+  vertical-align: middle;
+  display: inline-block;
+}
+.price {
+  color: rgb(234, 191, 0);
+  font-size: 22px;
+}
+.halfprice {
+  margin-top: -40px;
+  width: 80%;
+  text-align: right;
+  color: rgb(91, 90, 94);
+  vertical-align: middle;
+  display: inline-block;
+}
+.checkfooter .addToCart_button {
+  background-color: #000;
+  margin-top: 20px;
+  width: 100%;
+}
