@@ -1,6 +1,7 @@
 .size_buttons {
-  width: 200px;
-  padding: 20px;
+  width: 720px;
+  padding-left: 180px;
+  padding-right: 50px;
 }
 .size_buttons button {
   border-radius: 50%;
@@ -11,12 +12,26 @@
   margin: 5px;
   font-size: 11px;
 }
+.main{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product_length{
+  font-size: 18px;
+}
 .product {
-  padding-top: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  grid-template-rows: 100px 200px; 
+  grid-template-columns: 1fr 2fr;
+}
+.product image {
+  grid-template-rows: 100px 200px; 
+  grid-template-columns: 1fr 2fr;
 }
 .price_p {
   display: flex;
@@ -38,12 +53,12 @@
 .addToCart_button {
   background-color: rgb(27, 26, 32);
   color: rgb(255, 255, 255);
-  padding: 15px 100px;
+  padding: 15px 95px;
   cursor: pointer;
   border: none;
   font-size: 17px;
 }
-.addToCart_button:hover{
+.product:hover .addToCart_button{
   background-color: rgb(234, 191, 0);
 }
 .product_name {

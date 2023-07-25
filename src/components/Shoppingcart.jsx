@@ -1,5 +1,6 @@
 import "./module.scss";
 import Shoppingbag from "../img/shopping-cart.png";
+import { useEffect, useState } from "react";
 
 function Shoppingcart() {
   return (
@@ -9,8 +10,8 @@ function Shoppingcart() {
         <div className="Productsquantity">3</div>
       </button>
       <div className="checkout">
- <button className="closingbutton">X</button>
-       <header className="cartheader">
+        <button className="closingbutton">X</button>
+        <header className="cartheader">
           <div className="checkshopcart">
             <img src={Shoppingbag} className="shoppingbag" />
             <div className="Productsquantity">3</div>
@@ -24,7 +25,7 @@ function Shoppingcart() {
             <p className="halfprice">23</p>
           </div>
           <button className="addToCart_button">CHECKOUT</button>
-        </div> 
+        </div>
       </div>
     </>
   );
